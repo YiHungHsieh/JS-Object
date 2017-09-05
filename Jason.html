@@ -26,9 +26,12 @@
                 }
     };
     // console.log(point);
-    var jsonStr = JSON.stringify(point/*物件名稱*/);
+    var jsonStr = JSON.stringify(point/*物件名稱*/); //轉字串
+    var jsonObj= JSON.parse(jsonStr); //轉物件
     console.log(jsonStr);
-    console.log(jsonStr.indexOf("{"));
+    console.log(jsonStr.indexOf("x")); //字串取x的位置
+    console.log(jsonObj);
+    console.log(jsonObj.x); //物件取x的值
 </script>
 <style>
 
